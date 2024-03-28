@@ -275,7 +275,7 @@ module Jamf
       def update_refreshed_token(subcnx)
         return if subcnx.headers['Authorization'] == "Bearer #{@token.token}"
 
-        subcnx.authorization :Bearer, @token.token
+        subcnx.request :authorization, :Bearer, @token.token
       end
 
       # With a REST connection, there isn't any real "connection" to disconnect from

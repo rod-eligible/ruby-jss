@@ -15,6 +15,9 @@ __Please update all installations of ruby-jss to at least v1.6.0.__
 Many many thanks to actae0n of Blacksun Hackers Club for reporting this issue and providing examples of how it could be exploited.
 
 --------
+## \[4.1.0] 2024-03-27
+  - Added support for Faraday 2.0.0 and up. This is a breaking change for ruby-jss versions 4.0.0 and below. If you are using ruby-jss 4.0.0 or below, you will need to update your code to use Faraday 2.0.0 or higher. If you are using ruby-jss 4.1.0 or higher, you can use Faraday 2.0.0 or higher.
+
 ## \[4.0.0] 2024-02-05
 
 ### Changed

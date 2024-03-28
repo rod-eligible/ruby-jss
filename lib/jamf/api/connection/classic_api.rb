@@ -228,7 +228,7 @@ module Jamf
       # create the faraday CAPI connection object
       def create_classic_connection
         Faraday.new(@c_base_url, ssl: ssl_options) do |cnx|
-          cnx.authorization :Bearer, @token.token
+          cnx.request :authorization, :Bearer, @token.token
 
           cnx.options[:timeout] = @timeout
           cnx.options[:open_timeout] = @open_timeout

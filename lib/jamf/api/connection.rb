@@ -22,8 +22,8 @@
 ###
 ###
 
-require 'faraday' # >= 0.17.0
-require 'faraday_middleware' # >= 0.13.0
+require 'faraday' # >= 2.0.0
+require 'faraday/multipart' # >= 1.0.0
 
 # The main module
 module Jamf
